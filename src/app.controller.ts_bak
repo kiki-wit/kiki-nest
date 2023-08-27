@@ -1,0 +1,28 @@
+import { Controller, Get } from '@nestjs/common';
+import { AppService } from './app.service.ts_bak';
+
+@Controller()
+export class AppController {
+  constructor(private readonly appService: AppService) {}
+
+  /*
+  모율을 생성한다.
+  */
+
+  @Get()
+  getHello(): string {
+    /* 
+    컨트롤러의 함수는 오직 url만 받으며 
+    서비스에서만 비즈니스 로직을 만든다.
+    */
+    return this.appService.getHello();
+  }
+
+  /*
+  @Get() 은 라우터 역할을 한다.
+  */
+  @Get("/api/users")
+  getPage(): string {
+    return "page1";
+  }
+}
