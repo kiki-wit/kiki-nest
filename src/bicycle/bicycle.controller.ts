@@ -15,7 +15,7 @@ export class BicycleController {
   }
 
   @Get('search')
-  search(@Query("search") search: string){
+  search(@Query('search') search: string){
     return "We are searching";
   }
 
