@@ -32,7 +32,7 @@ export class BicycleController {
 
   @Delete('/:id')
   delete(@Param('id') no: String){
-    return `this will delete a bicycle`;
+    return `this will delete a bicycle..`;
   }
 
   // 일부만 업데이트 할 때 사용한다.

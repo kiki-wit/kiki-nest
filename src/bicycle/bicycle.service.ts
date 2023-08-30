@@ -4,4 +4,10 @@ import { Injectable } from '@nestjs/common';
 export class BicycleService {
   // 비즈니스 로직
   private bicycle = [];
+  private wheel = [];
+
+  
+  // 시작
+
+  // 끝
 }
